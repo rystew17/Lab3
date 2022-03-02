@@ -5,6 +5,11 @@ import seaborn as sns
 import numpy as np
 import altair as alt
 
+# This is the source code for Lab 3 app. The App contains vizualizations and the report.
+# Link to streamlit app
+# https://share.streamlit.io/rystew17/lab3/main/lab3.py
+
+
 st.title("CSE 5544 Lab 3 - Ethics")
 st.header("Ryan Stewart (.1756)")
 
