@@ -9,6 +9,7 @@ import altair as alt
 # Link to streamlit app
 # https://share.streamlit.io/rystew17/lab3/main/lab3.py
 
+st.write("Hello CSE 5544")
 
 st.title("CSE 5544 Lab 3 - Ethics")
 st.header("Ryan Stewart (.1756)")
