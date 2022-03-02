@@ -26,7 +26,7 @@ chart_data.rename(columns={"Country\year": "country", "value":"emission"}, inpla
 heatmap1 = alt.Chart(chart_data).mark_rect().encode(
     x=alt.X('country:N', title = 'Country'),
     y=alt.Y('year:O', title = 'Year'),
-    color=alt.Color('emission:Q', scale=alt.Scale(scheme='rainbow')),
+    color=alt.Color('emission:Q', title = 'Emmissoins', scale=alt.Scale(scheme='rainbow')),
     tooltip=['country', 'year', 'emission']
 ).properties(
     width = 1000,
@@ -36,7 +36,7 @@ heatmap1 = alt.Chart(chart_data).mark_rect().encode(
 heatmap2 = alt.Chart(chart_data).mark_rect().encode(
     x=alt.X('country:N', title = 'Country'),
     y=alt.Y('year:O', title = 'Year'),
-    color=alt.Color('emission:Q', scale=alt.Scale(scheme='greys')),
+    color=alt.Color('emission:Q', title = 'Emmissoins', scale=alt.Scale(scheme='greys')),
     tooltip=['country', 'year', 'emission']
 ).properties(
     width = 1000,
