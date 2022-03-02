@@ -24,10 +24,9 @@ chart_data['value'] = chart_data['value'].apply(pd.to_numeric, errors='coerce')
 chart_data.rename(columns={"Country\year": "country", "value":"emission"}, inplace = True)
 
 heatmap1 = alt.Chart(chart_data).mark_rect().encode(
-    x=alt.X('country:N', title = 'Country'),
-    y=alt.Y('year:O', title = 'Year'),
-    color=alt.Color('emission:Q', title = 'Emmissoins', scale=alt.Scale(scheme='rainbow')),
-    tooltip=['country', 'year', 'emission']
+    x=alt.X('country:N'),
+    y=alt.Y('year:O'),
+    color=alt.Color('emission:Q', scale=alt.Scale(scheme='rainbow'))
 ).properties(
     width = 1000,
     height = 1000
